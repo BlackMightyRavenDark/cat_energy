@@ -1,0 +1,46 @@
+.how {
+    margin: 70px 110px 0 110px;
+}
+
+.how > p:first-child {
+    margin-bottom: 70px;
+    font-size: 60px;
+}
+
+.how__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.how__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 245px;
+    height: 280px;
+}
+
+.how__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #68B738;
+}
+
+.how__card > p {
+    font-family: Arial;
+}
+
+.how__card > span {
+    position: absolute;
+    right: 0px;
+    top: -96px;
+    z-index: -1;
+    font-size: 250px;
+    color: #F2F2F2;
+    overflow: hidden;
+}
