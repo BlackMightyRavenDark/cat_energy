@@ -1,0 +1,35 @@
+.main__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.main__card {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 570px;
+    padding: 40px 50px 60px 50px;
+    background-color: #F2F2F2;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.card__header > span {
+    font-size: 36px;
+}
+
+.main__card > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__footer {
+    display: flex;
+    gap: 20px;
+}
