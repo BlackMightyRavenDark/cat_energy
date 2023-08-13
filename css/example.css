@@ -59,7 +59,7 @@
 .example-item > p:last-child {
     position: absolute;
     left: 50%;
-    top: 90%;
+    top: 80%;
     transform: translate(-50%, 0);
     padding: 0 10px;
     white-space: nowrap;

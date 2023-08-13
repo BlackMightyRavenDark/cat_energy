@@ -31,7 +31,7 @@
     background-color: #68B738;
 }
 
-.how__card > p {
+.how__card > p, .how__card > div > p {
     font-family: Arial;
 }
 
