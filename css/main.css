@@ -33,3 +33,9 @@
     display: flex;
     gap: 20px;
 }
+
+@media (max-width: 1200px) {
+    .main__card-list {
+        gap: 30px;
+    }
+}
