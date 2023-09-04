@@ -29,6 +29,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.card__line {
+    display: none;
+}
+
 .card__footer {
     display: flex;
     gap: 20px;
@@ -37,5 +41,46 @@
 @media (max-width: 1200px) {
     .main__card-list {
         gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main__card-list {
+        margin: 40px 20px 0 20px;
+    }
+
+    .main__card {
+        width: 280px;
+        gap: 20px;
+        padding: 40px 20px 60px 20px;
+    }
+
+    .main__card > p {
+        font-size: 14px;
+    }
+
+    .card__header {
+        gap: 20px;
+    }
+
+    .card__header > img {
+        width: 50px;
+    }
+
+    .card__header > span {
+        font-size: 24px;
+    }
+
+    .card__line {
+        display: inline;
+    }
+
+    .card__footer > p {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .card__footer > img {
+        width: 50px;
     }
 }

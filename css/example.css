@@ -41,6 +41,10 @@
     font-size: 24px;
 }
 
+.example-content__cat-before-mobile {
+    display: none;
+}
+
 .example__items {
     display: flex;
     flex-wrap: wrap;
@@ -131,9 +135,13 @@
     font-size: 28px;
 }
 
+.example-content__preview-slider > img:nth-child(3) {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .example > p:first-child {
-        margin: 0 0 0px 30px;
+        margin: 0 0 0 30px;
     }
 
     .example-content-wrapper {
@@ -177,5 +185,112 @@
 
     .example-content__preview-slider {
         position: relative;
+    }
+}
+
+@media (max-width: 600px) {
+    .example {
+        margin: 50px 0 0 0;
+    }
+
+    .example > p:first-child {
+        font-size: 36px;
+    }
+
+    .example > p:first-child, .example-content__info > p {
+        position: relative;
+        z-index: 1;
+    }
+
+    .example-content__info {
+        gap: 25px;
+    }
+
+    .example-content__info > p:first-child {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .example-item {
+        padding: 15px 40px;
+    }
+
+    .example-item > p:first-child {
+        font-size: 24px;
+    }
+
+    .example-item > p:last-child {
+        top: 83%;
+        font-size: 12px;
+    }
+
+    .example-item2 {
+        padding: 15px;
+    }
+
+    .example-content__metrics-container > div:last-child {
+        font-size: 14px;
+    }
+
+    .example-content__cat-preview-wrapper {
+        width: 310px;
+    }
+
+    .example-content__cat-before, .example-content__cat-after {
+        display: none;
+    }
+
+    .example-content__cat-before-mobile {
+        display: inline;
+        width: 310px;
+    }
+
+    .example-content__metrics-container {
+        flex-direction: column;
+    }
+
+    .example-content__metrics-container > div:last-child {
+        flex-direction: row;
+        gap: 10px;
+        z-index: 1;
+    }
+
+    .example-item > p:last-child {
+        white-space: normal;
+        background-color: #F2F2F2;
+    }
+
+    .example-content__cat-preview {
+        width: unset;
+    }
+
+    .example-content__cat-preview-wrapper {
+        height: 60px;
+    }
+
+    .example-content__cat-preview-subwrapper {
+        top: -200px;
+    }
+
+    .example-content__preview-slider {
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .example-content__preview-slider > p {
+        font-size: 16px;
+    }
+
+    .example-content__preview-slider > img:nth-child(2) {
+        display: none;
+    }
+
+    .example-content__preview-slider > img:nth-child(3) {
+        display: inline;
+    }
+
+    .bkg {
+        top: -70px;
+        height: 800px;
     }
 }

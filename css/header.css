@@ -21,6 +21,16 @@
     padding-top: 50px;
 }
 
+.nav-bar__logo-text {
+    display: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-bar__logo-text > p:nth-child(1) {
+    font-weight: 700;
+}
+
 .nav-bar > ul {
     display: flex;
     gap: 25px;
@@ -41,6 +51,14 @@
     text-decoration: underline;
 }
 
+.nav-bar > img:last-child {
+    display: none;
+}
+
+.logo-mobile {
+    display: none;
+}
+
 .main-text {
     display: flex;
     flex-direction: column;
@@ -55,7 +73,7 @@ h1 {
     line-height: 60px;
 }
 
-.main-text > p:nth-child(2) {
+.main-text > p {
     font-size: 24px;
     text-transform: uppercase;
 }
@@ -112,5 +130,56 @@ h1 {
         right: unset;
         left: 170px;
         top: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-mobile, .nav-bar > img:last-child {
+        display: inline;
+    }
+
+    .logo-desktop, .nav-bar > ul {
+        display: none;
+    }
+
+    .nav-bar__logo-text {
+        display: flex;
+        font-size: 24px;
+    }
+
+    .header {
+        background-image: url("../images/index-background-mobile.png");
+        background-size: 100%;
+        background-position: 0 80px;
+    }
+
+    .main-text {
+        width: unset;
+        margin: 40px 0 0 0;
+        gap: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .main-text > p {
+        font-size: 14px;
+    }
+
+    .main-text > button {
+        width: unset;
+        margin: 270px 20px 0 20px;
+        padding: 30px 0;
+        border: none;
+    }
+
+    .img-can {
+        width: 280px;
+        left: 5px;
+        top: 246px;
     }
 }
