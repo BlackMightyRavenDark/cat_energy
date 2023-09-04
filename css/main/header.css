@@ -8,7 +8,7 @@
 .header {
     position: relative;
     z-index: -1;
-    background-image: url("../images/index-background-desktop.png");
+    background-image: url("../../images/main/index-background-desktop.png");
     background-repeat: no-repeat;
     background-position-x: 100%;
 }
@@ -148,7 +148,7 @@ h1 {
     }
 
     .header {
-        background-image: url("../images/index-background-mobile.png");
+        background-image: url("../../images/main/index-background-mobile.png");
         background-size: 100%;
         background-position: 0 80px;
     }
